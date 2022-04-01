@@ -1,9 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Person from './Components/Person.js'
 
-class App extends Component {
+class App extends React.Component {
+
+
   render() {
     return (
-      <div>App</div>
+      <div className='App'>
+       <Person />
+      </div>
     )
   }
 }
