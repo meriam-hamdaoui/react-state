@@ -1,26 +1,24 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
 
 class Person extends React.Component {
- constructor(props) {
-   super(props)
- 
-   this.state = {
-      show : false
-   }
- }
-  showProfile(){
-    this.setState({
-      show : true
-    })
-  }
+ state = {
+   fullName: "HAMDAOUI Meriam",
+   bio: "Network engineer learning the web developement",
+   photo: "images/reading.jpg",
+   job : "Full Stack JS student",
+   show: true,
+ };
   render() {
     return (
       <div className='Person'>
-        <h1>Personal profile{console.log(this.state.show)}</h1>
-        <Button onClick={
-          ()=>this.showProfile()
-        }>show profile</Button>       
+        <h1> {this.state.fullName}</h1>
+        <h2>{this.state.job}</h2>
+        <p>{this.state.bio}</p>
+        <img 
+          src={this.state.photo}
+          alt=''
+          style={{ width: 350, height: 350, borderRadius: "50%" }}/>
+      
       </div>
     )
   }
