@@ -16,8 +16,8 @@ class Person extends React.Component {
         <p>{this.state.bio}</p>
         <img 
           src={this.state.photo}
-          alt=''
-          style={{ width: 350, height: 350, borderRadius: "50%" }}/>
+          alt='reading'
+          style={{ width: 350, height: 350, borderRadius: "25%" }}/>
       
       </div>
     )
